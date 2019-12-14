@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RwarriMS nav design</title>
+    <!-- metas -->
+    <link rel="manifest" type="text/css" href="/manifest.webapp">
+    <meta name="description" content="A privileged app stub">
+    <meta name="viewport" content="width=device-width">
+    <!-- Site data -->
+    <link rel="stylesheet" href="/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script type="text/javascript" src="/js/main.js" defer></script>
+
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <script type="text/javascript" src="/js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="content">
+      <nav class="sidebar" open="">
+        <div class="flex title">
+          <div class="logo"><i class="ion ion-logo-github"></i></div>
+          <div class="tab">RwarriMS</div>
+          <span class="sidebar-toggler high-disp"><i class="ion ion-md-menu"></i></span>
+        </div>
+        <ul class="menu">
+          <li class="sidebar-toggler title low-disp"><a href="#"><i class="ion ion-md-menu"></i><span>Menu</span></a></li>
+          <li class="nav-search">
+            <form class="nav-search-form">
+              <button><i class="ion ion-md-search"></i></button>
+              <input type="text" name="q" placeholder="Search">
+            </form>
+          </li>
+          <li><a href="#"><i class="ion ion-md-switch"></i><span>Dashboard</span></a></li>
+          <li><a href="#"><i class="ion ion-md-time"></i><span>Attendance</span></a></li>
+          <li><a href="#"><i class="ion ion-md-contact"></i><span>Profile</span></a></li>
+          <div class="sep"><i class="ion ion-md-stats"></i><span>Administration</span></div>
+          <hr>
+          <li><a href="#"><i class="ion ion-md-speedometer"></i><span>Attendance</span></a></li>
+          <li><a href="#"><i class="ion ion-md-people"></i><span>Employees</span></a></li>
+        </ul>
+      </nav>
+      <main>
+        Hello
+      </main>
+    </div>
+    <footer>
+      <span class="time">
+        <script type="text/javascript">d = new Date;document.write(d.getHours()+":"+d.getMinutes()+":"+d.getSeconds())</script>
+      </span>
+      <span class="copyright">
+        <span class="full">&copy; Rwanda Rural Rehabilitation Initiative</span>
+        <span class="collapsed">&copy; RWARRI</span>
+      </span>
+      <span class="version">v0.3</span>
+    </footer>
+  </body>
+</html>
