@@ -5,7 +5,7 @@ html, body, .content {
 body {
 	display: flex;
 }
-body > nav {
+body nav {
 	width: 300px;
 }
 body {
@@ -26,11 +26,11 @@ nav.sidebar li:hover {
 nav.sidebar {
 	background-color: lightgreen;
 }
-nav.sidebar > .menu span {
+nav.sidebar .menu span {
 	margin: auto 1rem;
 }
 /* Search form */
-nav.sidebar > .menu a, nav.sidebar > .menu > .sep {
+nav.sidebar .menu a, nav.sidebar .menu > .sep {
 	display: flex;
 }
 nav.sidebar .nav-search, .nav-search-form {
@@ -97,15 +97,29 @@ footer > .copyright > .full {
 @media screen and (min-width: 720px) {
 	/* When collapsed, show only the icons */
 	/* collapsed */
-	nav.sidebar {
+	nav.sidebar .sidebar-buffer {
+		display: block;
+		position: absolute;
+		overflow: visible;
+		background-color: lightgreen;
+		height: 100%;
 		width: 50px;
 		transition: .3s;
-		overflow-x: hidden;
 	}
-	nav.sidebar > .menu {
+	nav.sidebar[open] .sidebar-buffer {
+		width: auto;
+	}
+	nav.sidebar {
+		overflow: visible;
+		position: relative;
+		height: 100%;
+		width: 50px;
+		transition: .3s;
+	}
+	nav.sidebar .menu {
 		display: block;
 	}
-	nav.sidebar > .menu span, nav.sidebar input {
+	nav.sidebar .menu span, nav.sidebar input {
 		display: none;
 	}
 	nav.sidebar .title .tab {
@@ -124,7 +138,8 @@ footer > .copyright > .full {
 	nav.sidebar[open] .high-disp, nav.sidebar .low-disp {
 		display: block;
 	}
-	/* shown */	nav.sidebar[open] {
+	/* shown */	
+	nav.sidebar[open] .sidebar-toggle {
 		display: block;
 		width: 300px;
 	}
@@ -137,7 +152,7 @@ footer > .copyright > .full {
 	nav.sidebar[open] {
 		display: block;
 	}
-	nav.sidebar[open] > .menu span, nav.sidebar[open] input {
+	nav.sidebar[open] .menu span, nav.sidebar[open] input {
 		display: inline;
 	}
 	nav.sidebar[open] .title .tab, nav.sidebar[open] .title .logo {

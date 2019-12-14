@@ -1,0 +1,3 @@
+function registerSidebar() {
+    var sidebar = document.querySelector("nav.sidebar");
+}

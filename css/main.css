@@ -259,7 +259,7 @@ a:active {
 	background-color: rgba(0, 96, 223, 0.2);
 }
 a:visited {
-	color: rgb(149, 43, 185) !important;
+	color: rgb(149, 43, 185);
 }
 a:visited:active {
 	background-color: rgba(149, 43, 185, 0.2);
@@ -470,15 +470,15 @@ dialog[open] {
 	background-color: unset !important;
 	text-decoration: none !important;
 }
-.sidebar[open] > *:not(.title) {
-	display: block !important;
-} 
 .sidebar .menu {
 	border: 0;
 }
 .sidebar > *:not(.title) {
 	display: none;
 }
+.sidebar[open] > *:not(.title) {
+	display: block;
+} 
 .sidebar h1,
 .sidebar h2,
 .sidebar h3,
